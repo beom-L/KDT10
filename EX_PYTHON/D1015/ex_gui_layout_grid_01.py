@@ -30,19 +30,28 @@ window.geometry("900x400")
 ROWS = 3
 COLS = 3
 COLORS = ('yellow', 'lightblue', 'pink')  ##("E3F2FD", "#BBDEFB", "#90CAF9")
-WEIGHTS = (1,2,3)
+WEIGHTS = (1,4,1)
 
 ## --------------------------------------------------------------------
 ##- 윈도우에 배치될 행과 열 설정
 ## --------------------------------------------------------------------
-# 세로 3등분
+# 세로 3등분  => weight=1 행별 동일한 값 설정 즉, 균등
 for r in range(ROWS):
-    window.grid_rowconfigure(r, weight=1, uniform="row")
+    # window.grid_rowconfigure(r, weight=1, uniform="row")
+    window.grid_rowconfigure(r, weight=WEIGHTS[r], uniform="row")  ## 행별로 다른값 부여
 
-# 가로 3등분
+# 가로 3등분  => weight=1 컬럼별 동일한 값 설정 즉, 균등
 for c in range(COLS):
     window.grid_columnconfigure(c, weight=1, uniform="col")
 
+## 셀 채우기 : sticky='nsew' 중요
+for r in range(ROWS):
+    f = tkinter.Label(window, bg=COLORS[r], text=f'cell_{r}')
+
+    # - 컬럼병합(columnspan)으로 1행에 1개 Label 배치
+    # - 행 크기만큼 widget 늘려서 채우기  : sticky='nsew'
+    # - 행과 행 사이 여백 공간 설정       : pady, padx
+    f.grid(row=r, column=0, columnspan=3, sticky='nsew', padx=2, pady=2)
 
 
 ## --------------------------------------------------------------------

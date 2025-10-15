@@ -22,14 +22,37 @@ import tkinter
 ##- 윈도우 관련 
 ## --------------------------------------------------------------------
 ##- 윈도우 창 인스턴스 생성 및 설정
+window=tkinter.Tk()
+window.title("LAYOUT_PLACE")
+window.geometry("600x400")
+window.resizable(False,False)
+
 
 ## --------------------------------------------------------------------
 ##- 윈도우에 배치될 UI요소들 - Button 요소
 ## --------------------------------------------------------------------
+b1=tkinter.Button(window, text="(50, 50)", bg='yellow')
+b2=tkinter.Button(window, text="(50, 100)", bg='yellow')
+b3=tkinter.Button(window, text="(100, 150)", bg='yellow')
+b4=tkinter.Button(window, text="(0, 200)", bg='yellow')
+b5=tkinter.Button(window, text="(0, 300)", bg='yellow')
+b6=tkinter.Button(window, text="(0, 300)", bg='yellow')
 
+## - Button Widget 인스턴스 화면/Window에 배치
+b1.place(x=50, y=50)
+b2.place(x=50, y=100, width=50, height=50 )
+b3.place(x=100, y=150, bordermode='inside')
+
+## -> relwidth, relheight : 부모의 폭과 너비의 대한 비율
+b4.place(x=0, y=200, relwidth=0.5)
+
+## -> relx, rely : 부모의 폭과 너비에 대한 n%에 대한 좌표값
+b5.place(x=0, y=300, relx=0.5 )
+b6.place(x=0, y=300, relx=0.5, anchor='s')
 
 
 ## --------------------------------------------------------------------
 ##- 윈도우에서 발생하는 사용자 이벤트 수신
 ## --------------------------------------------------------------------
 ##- 종료 전까지 동작
+window.mainloop()
