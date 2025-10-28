@@ -8,3 +8,8 @@
 
 rock = {2:'가위', '0':'바위', '5':'보'}
 print(rock[2])
+
+a=['tkfka']
+a.sort()
+
+enumerate
