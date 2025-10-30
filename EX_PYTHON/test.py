@@ -5,11 +5,15 @@
 ## !
 ## *
 
+arr = [3, 2, 4, 1, 3]
+flag = [True, False, True, False, False]
 
-rock = {2:'가위', '0':'바위', '5':'보'}
-print(rock[2])
+x = []
 
-a=['tkfka']
-a.sort()
-
-enumerate
+for i in zip(arr,flag):
+    if i[1]:    ## True라면
+        for a in range(arr[0]*2):
+            x.append(arr[0])
+    else:
+        for a in range(arr[0]):
+            x.pop()
