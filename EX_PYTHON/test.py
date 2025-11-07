@@ -5,14 +5,15 @@
 ## !
 ## *
 ## =======================================
-def solution(strArr):
-    answer = [ len(s) for s in strArr ]
-    result = {}
-    for a in answer:
-        if a in result:
-            result[a] += 1
-        else:
-            result[a] = 1
-    return max(result.values())
+def solution(s):
+    ret = []
+    result = []
+    for i in s:
+        ret.append(s.count(i))
+    for idx, n in enumerate(ret):
+        if n == 1:
+            result.append(s[idx])
+    result.sort()
+    return ''.join(result)
 
-print(solution(["a","bc","d","efg","hi"]))  # 2
+print(solution("hello"))  # 2
