@@ -5,15 +5,26 @@
 ## !
 ## *
 ## =======================================
-def solution(s):
-    ret = []
-    result = []
-    for i in s:
-        ret.append(s.count(i))
-    for idx, n in enumerate(ret):
-        if n == 1:
-            result.append(s[idx])
-    result.sort()
-    return ''.join(result)
+# def solution(my_string):
+#     n=0
+#     for string in my_string:
+#         try:
+#             s = int(string)
+            
+#         except:
+#             n += 1
 
-print(solution("hello"))  # 2
+
+# print(solution("aAb1B2cC34oOp"))  
+
+
+####
+def solution(arr):
+    # arr = list(map(str, arr))
+    print(arr)
+    st = arr.index(2)
+    # la = arr.index(2, -1)
+
+    return print(st)
+
+print(solution([1, 2, 1, 4, 5, 2, 9]))  #	[2, 1, 4, 5, 2]
