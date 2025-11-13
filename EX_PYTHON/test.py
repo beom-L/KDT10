@@ -5,26 +5,21 @@
 ## !
 ## *
 ## =======================================
-# def solution(my_string):
-#     n=0
-#     for string in my_string:
-#         try:
-#             s = int(string)
-            
-#         except:
-#             n += 1
+def solution(n):
+    i = 2
+    ret=[]
+    while i <= n :
+        if (n/i) == (n//i) : ## 나눠지면
+            n = n/i
+            ret.append(i)
+        else:
+            i += 1
+        
+    ret = list(set(ret))
+    return ret
 
+print(solution(420))   # 4
 
-# print(solution("aAb1B2cC34oOp"))  
+for i in range(-3,2,1):
+    print(i)
 
-
-####
-def solution(arr):
-    # arr = list(map(str, arr))
-    print(arr)
-    st = arr.index(2)
-    # la = arr.index(2, -1)
-
-    return print(st)
-
-print(solution([1, 2, 1, 4, 5, 2, 9]))  #	[2, 1, 4, 5, 2]
