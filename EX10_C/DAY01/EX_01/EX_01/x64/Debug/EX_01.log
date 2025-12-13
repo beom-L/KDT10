@@ -1,0 +1,3 @@
+﻿  hello.c
+C:\Users\qjadl\Desktop\KDT10\EX10_C\DAY01\EX_01\EX_01\hello.c(16,14): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  EX_01.vcxproj -> C:\Users\qjadl\Desktop\KDT10\EX10_C\DAY01\EX_01\x64\Debug\EX_01.exe

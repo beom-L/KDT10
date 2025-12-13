@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\qjadl\\Desktop\\KDT10\\EX10_C\\DAY01\\EX_01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71456BB3-ECFC-46E4-A0B4-86B171F73788}|EX_01\\EX_01.vcxproj|C:\\Users\\qjadl\\Desktop\\KDT10\\EX10_C\\DAY01\\EX_01\\EX_01\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{71456BB3-ECFC-46E4-A0B4-86B171F73788}|EX_01\\EX_01.vcxproj|solutionrelative:EX_01\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "hello.c",
+              "DocumentMoniker": "C:\\Users\\qjadl\\Desktop\\KDT10\\EX10_C\\DAY01\\EX_01\\EX_01\\hello.c",
+              "RelativeDocumentMoniker": "EX_01\\hello.c",
+              "ToolTip": "C:\\Users\\qjadl\\Desktop\\KDT10\\EX10_C\\DAY01\\EX_01\\EX_01\\hello.c",
+              "RelativeToolTip": "EX_01\\hello.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-12-06T11:52:24.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
